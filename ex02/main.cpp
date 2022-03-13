@@ -6,7 +6,7 @@
 /*   By: tmerrien <tmerrien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 21:32:52 by tmerrien          #+#    #+#             */
-/*   Updated: 2022/03/13 16:17:33 by tmerrien         ###   ########.fr       */
+/*   Updated: 2022/03/13 20:37:18 by tmerrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,19 @@ int main(void)
 {
 	Array<int> b(20);
 	Array<int> a;
+
+	const Array<int> w(10);
+
+	// try
+	// {
+	// 	w[9] = 10;
+	// 	std::cout << w[9] << std::endl;
+	// }
+	// catch (std::exception &e)
+	// {
+	// 	std::cout << e.what() << std::endl;
+	// }
+	std::cout << w[1] << std::endl;
 	
 	std::cout << b.size() << std::endl;
 

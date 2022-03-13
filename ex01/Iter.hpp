@@ -6,7 +6,7 @@
 /*   By: tmerrien <tmerrien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 17:57:26 by tmerrien          #+#    #+#             */
-/*   Updated: 2022/03/13 16:34:05 by tmerrien         ###   ########.fr       */
+/*   Updated: 2022/03/13 20:21:16 by tmerrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,17 @@ void iter(T *tab, int size, void (*func)(T const &))
 	while (i < size)
 		func(tab[i++]);
 }
+
+// template <typename T>
+// void iter(T *tab, int size, void (*func)(T &))
+// {
+// 	int i;
+
+// 	i = 0;
+// 	if (size <= 0)
+// 		return;
+// 	while (i < size)
+// 		func(tab[i++]);
+// }
 
 #endif

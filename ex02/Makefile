@@ -1,4 +1,4 @@
-SRCS	=	main_42.cpp		\
+SRCS	=	main.cpp		\
 
 INC		=	Array.hpp	\
 

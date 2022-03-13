@@ -6,7 +6,7 @@
 /*   By: tmerrien <tmerrien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 21:36:09 by tmerrien          #+#    #+#             */
-/*   Updated: 2022/03/13 16:18:25 by tmerrien         ###   ########.fr       */
+/*   Updated: 2022/03/13 20:39:55 by tmerrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,15 @@ class Array
 				this->_data[i] = rhs._data[i];
 			return (*this);
 		}
+		
+		T &operator[](unsigned int i)
+		{
+			if (i >= this->_n)
+				throw OutOfBoundsException();
+			return (this->_data[i]);
+		}
 
-		T &operator[](unsigned int i) const
+		const T &operator[](unsigned int i) const
 		{
 			if (i >= this->_n)
 				throw OutOfBoundsException();
