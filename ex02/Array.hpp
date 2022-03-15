@@ -6,7 +6,7 @@
 /*   By: tmerrien <tmerrien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 21:36:09 by tmerrien          #+#    #+#             */
-/*   Updated: 2022/03/13 20:39:55 by tmerrien         ###   ########.fr       */
+/*   Updated: 2022/03/15 01:35:50 by tmerrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ class Array
 				}
 		};
 
-		unsigned int size(void)
+		unsigned int size(void) const
 		{
 			return (this->_n);
 		}
